@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yung_coder.oluwole.imagecompressor.Compare">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/first_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/compress" />
+
+        <ImageView
+            android:id="@+id/second_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/first_image"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/compress" />
+
+        <TextView
+            android:id="@+id/text_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second_image"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:text="Image Size"
+            android:textColor="@color/color_black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</ScrollView>

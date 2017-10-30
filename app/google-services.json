@@ -93,6 +93,138 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185924451400:android:8e09fd5682c7a8f2",
+        "android_client_info": {
+          "package_name": "com.yung_coder.oluwole.a3levelauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185924451400-4lt4435pu37rb8q0unrbqks3hnptvlct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yung_coder.oluwole.a3levelauth",
+            "certificate_hash": "37f7ce03b8b75cd2075faef815900777a761d28c"
+          }
+        },
+        {
+          "client_id": "185924451400-373k030qp9hnqtfbt0edtc0bb88q8b9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJU9wERC6HObdQ_HnUD7afAnJGemHFS2c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185924451400-373k030qp9hnqtfbt0edtc0bb88q8b9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185924451400:android:4c9bb55c13e862c1",
+        "android_client_info": {
+          "package_name": "com.yung_coder.oluwole.mobilebanking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185924451400-kv2un8mmueran1psgfcj37uahg7qc4g7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yung_coder.oluwole.mobilebanking",
+            "certificate_hash": "37f7ce03b8b75cd2075faef815900777a761d28c"
+          }
+        },
+        {
+          "client_id": "185924451400-373k030qp9hnqtfbt0edtc0bb88q8b9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJU9wERC6HObdQ_HnUD7afAnJGemHFS2c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185924451400-373k030qp9hnqtfbt0edtc0bb88q8b9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185924451400:android:46e8bec2681769ca",
+        "android_client_info": {
+          "package_name": "com.yung_coder.oluwole.nearestlocationfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185924451400-32et05l5d03deo1dtpp9ivatofr1obms.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yung_coder.oluwole.nearestlocationfinder",
+            "certificate_hash": "37f7ce03b8b75cd2075faef815900777a761d28c"
+          }
+        },
+        {
+          "client_id": "185924451400-373k030qp9hnqtfbt0edtc0bb88q8b9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJU9wERC6HObdQ_HnUD7afAnJGemHFS2c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185924451400-373k030qp9hnqtfbt0edtc0bb88q8b9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"

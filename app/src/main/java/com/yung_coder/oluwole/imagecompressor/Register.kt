@@ -5,9 +5,9 @@ import android.animation.AnimatorListenerAdapter
 import android.annotation.TargetApi
 import android.content.Intent
 import android.os.Build
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.Snackbar
+import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
 import android.view.View
 import com.google.android.gms.tasks.Task
@@ -27,10 +27,10 @@ class Register : AppCompatActivity() {
         }
     }
 
-    fun attemptRegistration(){
-        var email = register_email.text.toString()
-        var password = register_pwd.text.toString()
-        var confirm_password = register_confirm_pwd.text.toString()
+    private fun attemptRegistration() {
+        val email = register_email.text.toString()
+        val password = register_pwd.text.toString()
+        val confirm_password = register_confirm_pwd.text.toString()
 
         var cancel = false
         var focusView: View? = null
@@ -57,8 +57,11 @@ class Register : AppCompatActivity() {
             register_confirm_pwd.error = "Confirm your password to continue"
             focusView = register_confirm_pwd
             cancel = true
-        }
-        else if(!validatePassword(password, confirm_password)){
+        } else if (!validatePasswordLength(password)) {
+            cancel = true
+            focusView = register_pwd
+            register_pwd.error = "Password not secure. Ensure password Length is greater than six (6)"
+        } else if (!validatePassword(password, confirm_password)) {
             register_confirm_pwd.error = "Ensure password match"
             register_pwd.error = "Ensure password match"
             focusView = register_pwd
@@ -82,20 +85,24 @@ class Register : AppCompatActivity() {
                 }
                 else{
                     showProgress(false)
-                    Snackbar.make(register_container,"Unable to Complete Registration", Snackbar.LENGTH_LONG)
+                    Snackbar.make(register_container, "Unable to Complete Registration", Snackbar.LENGTH_LONG).show()
                 }
             }
         }
 
     }
 
-    fun validatePassword(password: String, confirmPass: String): Boolean{
+    private fun validatePasswordLength(password: String): Boolean {
+        return password.length > 6
+    }
+
+    private fun validatePassword(password: String, confirmPass: String): Boolean {
         return password == confirmPass
     }
 
     private fun validateEmail(email: String): Boolean {
-        var pattern = Pattern.compile("^[a-zA-Z0-9_]+@[a-zA-Z.]+\$")
-        var matcher = pattern.matcher(email)
+        val pattern = Pattern.compile("^[a-zA-Z0-9_]+@[a-zA-Z.]+\$")
+        val matcher = pattern.matcher(email)
         return matcher.find()
     }
 

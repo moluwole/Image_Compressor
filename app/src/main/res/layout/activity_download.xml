@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yung_coder.oluwole.imagecompressor.Download">
+
+    <EditText
+        android:id="@+id/url_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/hint_download"
+        android:inputType="textUri" />
+
+    <Button
+        android:id="@+id/button_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/download_text" />
+
+    <ProgressBar
+        android:id="@+id/download_progress"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:indeterminate="false"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,19 +9,19 @@
         android:id="@+id/register_title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="22dp"
         android:gravity="center_horizontal"
         android:text="@string/register_header"
         android:textColor="#000"
         android:textSize="26sp"
-        android:layout_alignParentTop="true"
         android:textStyle="bold" />
     <ScrollView
         android:id="@+id/register_container"
         android:layout_width="match_parent"
-        android:layout_below="@+id/register_title"
         android:layout_height="match_parent"
+        android:layout_below="@+id/register_title"
         >
         <LinearLayout
             android:id="@+id/register_form"
@@ -112,10 +111,10 @@
         android:id="@+id/reg_progress"
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="8dp"
-        android:layout_centerInParent="true"
         android:padding="10dp"
         android:visibility="gone" />
 

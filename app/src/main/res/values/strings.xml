@@ -46,4 +46,6 @@
     <string name="initial_size">Image Initial Size: %1$s MB</string>
     <string name="final_size">Image Final Size: %1$s MB</string>
     <string name="image_name">Image Name: %1s</string>
+    <string name="hint_download">Enter Download Url</string>
+    <string name="download_text">Download</string>
 </resources>

@@ -16,53 +16,76 @@
         android:weightSum="4"
         >
     <ImageView
+        android:id="@+id/img"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:scaleType="centerCrop"
-        android:id="@+id/img"
-        android:layout_weight="4"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="4"
+        android:scaleType="centerCrop"
         />
+
+        <Button
+            android:id="@+id/button_compare"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:background="@color/colorPrimary"
+            android:text="Compare"
+            android:textColor="@color/color_white" />
     <TextView
+        android:id="@+id/image_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:id="@+id/image_name"
-        android:text="Image Name"
         android:layout_gravity="bottom"
-        android:textSize="17sp"
+        android:padding="10dp"
+        android:text="Image Name"
         android:textColor="#000"
+        android:textSize="17sp"
         />
     <TextView
+        android:id="@+id/image_initial_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="Image Initial Size"
-        android:id="@+id/image_initial_size"
-        android:textSize="17sp"
         android:textColor="#000"
+        android:textSize="17sp"
         />
     <TextView
+        android:id="@+id/image_final_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/image_final_size"
         android:padding="10dp"
         android:text="Image Final Size"
-        android:textSize="17sp"
         android:textColor="#000"
+        android:textSize="17sp"
         />
         <TextView
+            android:id="@+id/image_compress_rate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Compression Rate"
-            android:id="@+id/image_compress_rate"
             android:padding="10dp"
-            android:textSize="17sp"
+            android:text="Compression Rate"
             android:textColor="#000"
-            />
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btnSendBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_bluetooth_24dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_bluetooth_24dp"
+            android:padding="10dp"
+            android:text="Send Via Bluetooth"
+            android:textColor="#FFF"
+            android:visibility="gone" />
     </LinearLayout>
 
 </RelativeLayout>

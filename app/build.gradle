@@ -39,9 +39,12 @@ dependencies {
 
     implementation 'com.github.clans:fab:1.6.4'
     implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.tonyodev.fetch:fetch:1.1.3'
 
 
 }
+
+
 
 
 

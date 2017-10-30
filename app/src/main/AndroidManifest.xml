@@ -7,6 +7,9 @@
         android:required="true" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -24,6 +27,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,6 +40,13 @@
             android:name=".Home"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Compare" />
+
+        <activity
+            android:name=".Download"
+            android:excludeFromRecents="true"
+            android:label="Download Image"
+            android:theme="@style/Theme.AppCompat.Dialog" />
     </application>
 
 </manifest>
