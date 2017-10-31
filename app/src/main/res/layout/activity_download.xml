@@ -6,23 +6,35 @@
     android:orientation="vertical"
     tools:context="com.yung_coder.oluwole.imagecompressor.Download">
 
-    <EditText
-        android:id="@+id/url_download"
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/new_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="20dp"
-        android:hint="@string/hint_download"
-        android:inputType="textUri" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp">
 
+        <EditText
+            android:id="@+id/url_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/hint_download"
+            android:inputType="textUri" />
+    </android.support.design.widget.TextInputLayout>
     <Button
         android:id="@+id/button_download"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="10dp"
         android:text="@string/download_text" />
 
     <ProgressBar
