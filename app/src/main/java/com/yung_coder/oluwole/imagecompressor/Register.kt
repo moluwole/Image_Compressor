@@ -82,6 +82,7 @@ class Register : AppCompatActivity() {
                     var home_intent = Intent(this, Home::class.java)
 
                     startActivity(home_intent)
+                    finish()
                 }
                 else{
                     showProgress(false)
